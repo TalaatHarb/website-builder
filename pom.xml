@@ -21,14 +21,14 @@
 		<lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
 		<slf4jVersion>2.0.13</slf4jVersion>
 		<!-- Testing -->
-		<junit.version>5.9.1</junit.version>
-		<junit.platform.version>1.9.1</junit.platform.version>
+		<junit.version>5.11.0-M1</junit.version>
+		<junit.platform.version>1..1</junit.platform.version>
 		<minimum-coverage-ratio>0.8</minimum-coverage-ratio>
 		<pitest.version>1.16.1</pitest.version>
 		<pitest-junit5-plugin.version>1.2.1</pitest-junit5-plugin.version>
-		<mockito.version>5.11.0</mockito.version>
+		<mockito.version>5.12.0</mockito.version>
 		<!-- Maven plugins -->
-		<maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
+		<maven-jar-plugin.version>3.4.1</maven-jar-plugin.version>
 		<maven-apache-test-plugins.version>3.0.0-M6</maven-apache-test-plugins.version>
 		<maven-apache-plugins.version>3.10.1</maven-apache-plugins.version>
 		<maven-assembly-plugin.version>3.4.2</maven-assembly-plugin.version>
