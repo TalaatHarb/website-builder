@@ -12,5 +12,7 @@ public class Website {
 	private String name;
 	private WebsitePages pages;
 	private WebsiteCustomComponents customComponents;
+	private WebsiteLinkedFiles linkedFiles;
+	private WebsiteScripts scriptFiles;
 
 }
