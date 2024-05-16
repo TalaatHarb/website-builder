@@ -1,15 +1,20 @@
 package net.talaatharb.websitebuilder.dtos;
 
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
-@RequiredArgsConstructor
 public abstract class WebsiteItem {
-		
-	private final String name;
+	
+	@Setter
+	protected String name;
+	
+	protected WebsiteItem(String name, WebsiteItemType itemType) {
+		this.name = name;
+		this.itemType = itemType;
+	}
 	
 	@Getter
-	private final WebSiteItemType itemType;
+	private final WebsiteItemType itemType;
 	
 	@Override
 	public String toString() {

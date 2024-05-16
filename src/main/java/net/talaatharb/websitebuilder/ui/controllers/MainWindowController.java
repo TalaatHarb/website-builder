@@ -53,6 +53,7 @@ public class MainWindowController implements Initializable {
 		rootNode.setExpanded(true);
 
 		websiteTree.setRoot(rootNode);
+		websiteTree.setCellFactory(treeView -> new WebsiteTreeCellImpl());
 	}
 
 	private Website createSampleWebsite() {
@@ -64,7 +65,7 @@ public class MainWindowController implements Initializable {
 		website.setPages(pages);
 
 		WebsiteCustomComponents customComponents = new WebsiteCustomComponents();
-		customComponents.getCustomComponents().addAll(IntStream.range(1, RANDOM.nextInt(2, 10))
+		customComponents.getCustomComponents().addAll(IntStream.range(1, RANDOM.nextInt(2, 5))
 				.mapToObj(n -> new WebsiteCustomComponent("Component - " + n)).toList());
 		website.setCustomComponents(customComponents);
 		return website;

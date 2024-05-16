@@ -3,11 +3,11 @@ package net.talaatharb.websitebuilder.dtos;
 public class WebsiteRoot extends WebsiteItem {
 	
 	public WebsiteRoot(String name) {
-		super(name, WebSiteItemType.ROOT);
+		super(name, WebsiteItemType.ROOT);
 	}
 
 	public WebsiteRoot(Website website) {
-		super(website.getName(), WebSiteItemType.ROOT);
+		super(website.getName(), WebsiteItemType.ROOT);
 	}
 
 }

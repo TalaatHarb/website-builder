@@ -8,12 +8,12 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class WebsiteCustomComponents extends WebsiteItem {
+public class WebsiteCustomComponents extends WebsiteItem implements WebsiteItemCategory {
 	
 	private List<WebsiteCustomComponent> customComponents = new ArrayList<>();
 
 	public WebsiteCustomComponents() {
-		super("Custom Components", WebSiteItemType.CUSTOM_COMPONENTS);
+		super("Custom Components", WebsiteItemType.CUSTOM_COMPONENTS);
 	}
 
 }

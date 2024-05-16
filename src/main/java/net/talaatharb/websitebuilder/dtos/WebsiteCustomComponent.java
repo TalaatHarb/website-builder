@@ -1,9 +1,17 @@
 package net.talaatharb.websitebuilder.dtos;
 
-public class WebsiteCustomComponent extends WebsiteItem {
+import java.util.ArrayList;
+import java.util.List;
+
+import lombok.Getter;
+
+public class WebsiteCustomComponent extends WebsiteItem implements WebPageElementContainer{
+	
+	@Getter
+	private final List<WebPageElement> elements = new ArrayList<>();
 
 	public WebsiteCustomComponent(String name) {
-		super(name, WebSiteItemType.CUSTOM_COMPONENT);
+		super(name, WebsiteItemType.CUSTOM_COMPONENT);
 	}
 
 }

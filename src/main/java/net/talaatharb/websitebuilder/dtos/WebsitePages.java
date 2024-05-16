@@ -8,12 +8,12 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class WebsitePages extends WebsiteItem{
+public class WebsitePages extends WebsiteItem implements WebsiteItemCategory{
 	
 	private List<WebsitePage> pages = new ArrayList<>();
 
 	public WebsitePages() {
-		super("Pages", WebSiteItemType.PAGES);
+		super("Pages", WebsiteItemType.PAGES);
 	}
 
 }

@@ -4,16 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Getter;
-import lombok.Setter;
 
-@Getter
-@Setter
-public class WebsitePage extends WebsiteItem{
+public class WebsitePage extends WebsiteItem implements WebPageElementContainer{
 	
-	private List<WebPageElement> elements = new ArrayList<>();
+	@Getter
+	private final List<WebPageElement> elements = new ArrayList<>();
 
 	public WebsitePage(String name) {
-		super(name, WebSiteItemType.PAGE);
+		super(name, WebsiteItemType.PAGE);
 	}
 
 }
